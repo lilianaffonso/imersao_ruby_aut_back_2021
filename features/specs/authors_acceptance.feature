@@ -23,3 +23,20 @@ Então o status da resposta é 200
 E recebo um autor
 E os dados do autor cadastrado estão conforme informado
 
+#EXERCÍCIOS:
+
+Cenário: Verificar busca de autor por id 
+Dado que faço uma requisição GET para o endpoint de obter autores com id do autor
+Então o status da resposta é 200
+E recebo um autor
+E os dados são os do autor buscado
+
+Cenário: Verificar edição de autor
+Dado que faço uma requisição PUT para o endpoint de editar autor
+Então o status da resposta é 200
+E recebo um autor
+E os dados do autor editado estão conforme informado
+
+#NÃO SE APLICA PORQUE A API NÃO DELETA DE VERDADE. 
+#CASO DELETASSE, PODERIA TESTAR EXCLUIR UM AUTOR E FAZER UM GET PRA VER SE ELE CONSTA NA LISTA.
+#Cenário: Verificar exclusão de autor
